@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tarea - Administrador de Tareas</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 500px; margin: 30px auto; }
+    .completada { text-decoration: line-through; color: gray; }
+    .error { color: red; font-size: 0.9em; }
+    ul { list-style: none; padding: 0; }
+    li { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #eee; }
+  </style>
+</head>
+<body>
+  <h1>Administrador de Tareas</h1>
+  <form id="formTarea">
+    <input id="tituloTarea" type="text" placeholder="Escribe una tarea...">
+    <select id="prioridadTarea">
+      <option value="Baja">Baja</option>
+      <option value="Media">Media</option>
+      <option value="Alta">Alta</option>
+    </select>
+    <button type="submit">Agregar Tarea</button>
+  </form>
+  <p id="mensajeError" class="error"></p>
+  <ul id="listaTareas"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
